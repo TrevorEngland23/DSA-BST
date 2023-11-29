@@ -13,6 +13,7 @@ public class Test {
         tree.insert(88);
         tree.insert(24);
         tree.insert(10);
+        tree.insert(70);
 
         if(tree.find(24) == null){
             System.out.println("24 not in tree");
@@ -26,11 +27,14 @@ public class Test {
             System.out.println("is in list");
         }
 
-        tree.inOrder();
-        System.out.println();
-        tree.preOrder();
-        System.out.println();
-        tree.postOrder();
+        System.out.println("number of nodes: " + tree.countNodes());
+        System.out.println("Number of leaf nodes: " + tree.countLeafNodes());
+
+        // tree.inOrder();
+        // System.out.println();
+        // tree.preOrder();
+        // System.out.println();
+        // tree.postOrder();
         
     }
 }
